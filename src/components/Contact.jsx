@@ -221,9 +221,13 @@ const Contact = () => {
                   </Box>
                   <Box>
                     <Typography variant="subtitle2" color="text.secondary">Email</Typography>
-                    <Typography variant="body1" fontWeight={500}>
-                      abhishekjana.2507@gmail.com
-                    </Typography>
+                    <Link
+  href="mailto:abhishekjana.2507@gmail.com"
+  underline="hover"
+  sx={{ fontWeight: 500, color: 'inherit', '&:hover': { color: 'primary.main' } }}
+>
+  Abhishek Jana
+</Link>
                   </Box>
                 </Box>
                 
@@ -288,7 +292,7 @@ const Contact = () => {
                   <Box>
                     <Typography variant="subtitle2" color="text.secondary">LinkedIn</Typography>
                     <Link 
-                      href="https://linkedin.com/in/abhishek-jana" 
+                      href="www.linkedin.com/in/abhishek-jana-49513822a" 
                       target="_blank"
                       underline="hover"
                       sx={{ 

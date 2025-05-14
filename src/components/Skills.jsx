@@ -15,15 +15,15 @@ const skills = [
   { name: 'Node.js', level: 80, category: 'runtime', favorite: true, icon: 'N' },
   { name: 'Express.js', level: 80, category: 'framework', icon: 'E' },
   { name: 'Next.js', level: 75, category: 'framework', icon: 'N' },
-  { name: 'TypeScript', level: 80, category: 'language', favorite: true, icon: 'TS' },
+  { name: 'Java', level: 80, category: 'language', favorite: true, icon: 'Java' },
   { name: 'HTML/CSS', level: 90, category: 'language', favorite: true, icon: 'HC' },
   { name: 'Material UI', level: 85, category: 'library', icon: 'M' },
   { name: 'Tailwind CSS', level: 80, category: 'library', icon: 'T' },
   { name: 'Git/GitHub', level: 85, category: 'tool', favorite: true, icon: 'G' },
-  { name: 'Docker', level: 75, category: 'tool', icon: 'D' },
+ 
   { name: 'MySQL', level: 80, category: 'database', icon: 'M' },
   { name: 'MongoDB', level: 75, category: 'database', icon: 'M' },
-  { name: 'GraphQL', level: 70, category: 'query', icon: 'G' },
+  
   { name: 'REST API', level: 85, category: 'service', favorite: true, icon: 'R' },
 ];
 
@@ -35,19 +35,15 @@ const tools = [
   { name: 'Tailwind CSS', category: 'library', icon: 'T' },
   { name: 'Node.js', category: 'runtime', icon: 'N' },
   { name: 'Express.js', category: 'framework', icon: 'E' },
-  { name: 'TypeScript', category: 'language', icon: 'TS' },
-  { name: 'Prisma', category: 'library', icon: 'P' },
+  { name: 'Javat', category: 'language', icon: 'TS' },
+  
   { name: 'PostgreSQL', category: 'database', icon: 'P' },
   { name: 'MongoDB', category: 'database', icon: 'M' },
   { name: 'Git', category: 'tool', icon: 'G' },
   { name: 'GitHub', category: 'tool', icon: 'G' },
   { name: 'VSCode', category: 'tool', icon: 'V' },
-  { name: 'Figma', category: 'tool', icon: 'F' },
-  { name: 'Jira', category: 'tool', icon: 'J' },
-  { name: 'Docker', category: 'tool', icon: 'D' },
-  { name: 'AWS', category: 'service', icon: 'A' },
   { name: 'Firebase', category: 'service', icon: 'F' },
-  { name: 'Stripe', category: 'service', icon: 'S' },
+  
 ];
 
 const categories = [
@@ -122,7 +118,7 @@ const SkillItem = ({ skill, theme, toggleFavorite }) => {
             }
           }}
         >
-          {skill.favorite ? <StarIcon /> : <StarBorderIcon />}
+          
         </IconButton>
       </Box>
 
@@ -509,11 +505,16 @@ const Skills = () => {
           </Paper>
 
           <Grid container spacing={3}>
-            {filteredSkills.length > 0 ? (
-              filteredSkills.map((skill, index) => (
-                <Grid item xs={12} sm={6} md={4} lg={3} key={index}>
-                  <SkillItem skill={skill} theme={theme} toggleFavorite={toggleFavorite} />
-                </Grid>
+  {filteredSkills.length > 0 ? (
+    filteredSkills.map((skill, index) => (
+      <Grid item xs={6} md={4} lg={3} key={index}> {/* 2 cols on mobile/tablet */}
+        <SkillItem 
+          skill={skill} 
+          theme={theme} 
+          toggleFavorite={toggleFavorite} 
+          sx={{ height: '100%' }} 
+        />
+      </Grid>
               ))
             ) : (
               <Grid item xs={12}>

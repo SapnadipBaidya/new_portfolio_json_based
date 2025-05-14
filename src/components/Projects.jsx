@@ -22,9 +22,8 @@ const projects = [
     technologies: ['React', 'Next.js', 'Node.js', 'Express', 'Sequelize', 'MySQL', 'RazorPay'],
     category: 'ecommerce',
     links: {
-      demo: '#',
-      github: '#',
-      caseStudy: '#'
+      demo: 'https://jail-luxruy-next-app.vercel.app/',
+      github: 'https://github.com/HorizonDevil/Jail-Luxuary-Frontend'
     },
     icon: <ShoppingCart />,
     accentColor: '#FF6B6B',
@@ -40,8 +39,7 @@ const projects = [
     category: 'iot',
     links: {
       demo: '#',
-      github: '#',
-      caseStudy: '#'
+      github: '#'
     },
     icon: <Sensors />,
     accentColor: '#4ECDC4',
@@ -57,8 +55,7 @@ const projects = [
     category: 'web',
     links: {
       demo: '#',
-      github: '#',
-      caseStudy: '#'
+      github: '#'
     },
     icon: <Code />,
     accentColor: '#FFD166',
@@ -73,9 +70,8 @@ const projects = [
     technologies: ['React', 'Node.js', 'Express', 'MongoDB', 'PDF.js', 'jsPDF'],
     category: 'web',
     links: {
-      demo: '#',
-      github: '#',
-      caseStudy: '#'
+      demo: 'https://drive.google.com/file/d/19VAAt_xBJVtncUv9wQfjvxywToj4ZRlx/view?usp=sharing',
+      github: 'https://github.com/HorizonDevil/Smart-Contract-Signer'
     },
     icon: <Description />,
     accentColor: '#06D6A0',
@@ -91,12 +87,29 @@ const projects = [
     category: 'data',
     links: {
       demo: '#',
-      github: '#',
-      caseStudy: '#'
+      github: '#'
+      
     },
     icon: <DataArray />,
     accentColor: '#A78BFA',
     images: ['/project5-1.jpg', '/project5-2.jpg']
+  },
+  {
+    id: 6,
+    title: 'Personal Portfolio Website',
+    date: 'May 2025',
+    description: 'Designed and developed a dynamic personal portfolio website using React, Node.js, JavaScript, and Framer Motion. Showcases projects, skills, and contact information with responsive design and smooth animations.',
+    longDescription: 'This project is a modern developer portfolio built using React for the frontend and Node.js for basic backend functionality. It includes sections like Hero, About, Projects, Skills, and Contact. Framer Motion is used extensively for animations, providing smooth transitions and interactive effects. The design is fully responsive, ensuring optimal viewing across devices. The portfolio also features a custom-built typing animation, theme-aware styling, and interactive project modals.',
+    technologies: ['React', 'Node.js', 'JavaScript', 'Framer Motion', 'MUI'],
+    category: 'portfolio',
+    links: {
+      demo: '#',
+      github: 'https://github.com/HorizonDevil/MyPortfolio'
+      
+    },
+    icon: <Code />,
+    accentColor: '#7F5AF0',
+    images: ['/portfolio1.jpg', '/portfolio2.jpg']
   }
 ];
 

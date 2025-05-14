@@ -16,13 +16,13 @@ const Footer = () => {
       <Divider sx={{ mb: 4 }} />
       
       <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2, mb: 3 }}>
-        <IconButton href="https://github.com/yourusername" target="_blank">
+        <IconButton href="https://github.com/HorizonDevil" target="_blank">
           <GitHub />
         </IconButton>
         <IconButton href="https://twitter.com/yourusername" target="_blank">
           <Twitter />
         </IconButton>
-        <IconButton href="https://instagram.com/yourusername" target="_blank">
+        <IconButton href="https://www.instagram.com/n0t_s0__comm0n" target="_blank">
           <Instagram />
         </IconButton>
       </Box>
