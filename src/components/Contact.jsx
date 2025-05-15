@@ -186,7 +186,7 @@ const Contact = () => {
                       }
                     }}
                   >
-                    Download CV
+                    RESUME 
                   </GlowButton>
                 </Box>
               </Box>
