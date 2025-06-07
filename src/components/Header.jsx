@@ -67,7 +67,7 @@ const Header = ({ mode, setMode }) => {
       <PortalDialog
         open={contactDialogOpen}
         onClose={() => setContactDialogOpen(false)}
-        url="http://portfolioui.s3-website.eu-north-1.amazonaws.com/contact"
+        url="/legacy-app/index.html"
       />
 
       <style jsx>{`

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.js": "/legacy-app/static/js/main.de484541.js",
+    "static/js/962.20c0fff5.chunk.js": "/legacy-app/static/js/962.20c0fff5.chunk.js",
+    "static/js/443.0b5a1afd.chunk.js": "/legacy-app/static/js/443.0b5a1afd.chunk.js",
+    "static/js/627.429ff20f.chunk.js": "/legacy-app/static/js/627.429ff20f.chunk.js",
+    "static/js/155.3fd37d4e.chunk.js": "/legacy-app/static/js/155.3fd37d4e.chunk.js",
+    "index.html": "/legacy-app/index.html",
+    "main.de484541.js.map": "/legacy-app/static/js/main.de484541.js.map",
+    "962.20c0fff5.chunk.js.map": "/legacy-app/static/js/962.20c0fff5.chunk.js.map",
+    "443.0b5a1afd.chunk.js.map": "/legacy-app/static/js/443.0b5a1afd.chunk.js.map",
+    "627.429ff20f.chunk.js.map": "/legacy-app/static/js/627.429ff20f.chunk.js.map",
+    "155.3fd37d4e.chunk.js.map": "/legacy-app/static/js/155.3fd37d4e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.de484541.js"
+  ]
+}

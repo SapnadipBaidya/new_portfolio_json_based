@@ -179,7 +179,7 @@ const Contact = () => {
                   </GlowButton>
                   <GlowButton 
                     startIcon={<FileDownload />}
-                    onClick={() => window.open('/Sapnadip Baidya Frontend Developer.pdf', '_blank')}
+                    onClick={() => window.open('/sapnadip_baidya_cv.pdf', '_blank')}
                     sx={{
                       '&:before': {
                         background: `linear-gradient(45deg, ${theme.palette.secondary?.main || '#6e48aa'}, ${theme.palette.success.main || '#4caf50'})`,

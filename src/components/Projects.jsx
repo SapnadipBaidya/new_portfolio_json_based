@@ -103,8 +103,8 @@ demo: 'https://github.com/SapnadipBaidya/datapipelineui',
     technologies: ['React', 'Node.js', 'JavaScript', 'Framer Motion', 'MUI'],
     category: 'portfolio',
     links: {
-      demo: '#',
-      github: 'https://github.com/HorizonDevil/MyPortfolio'
+      demo: 'https://vercel.com/sapnadipbaidyas-projects/new-portfolio-json-based',
+      github: 'https://github.com/SapnadipBaidya/new_portfolio_json_based'
       
     },
     icon: <Code />,
