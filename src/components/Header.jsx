@@ -1,20 +1,22 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { DarkMode, LightMode } from '@mui/icons-material';
+import PortalDialog from './PortalDialog'; // Make sure this path is correct
+
+const NAV_ITEMS = ['about', 'skills', 'projects', 'education', 'contact'];
 
 const Header = ({ mode, setMode }) => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [contactDialogOpen, setContactDialogOpen] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setScrolled(window.scrollY > 10);
-    };
+    const handleScroll = () => setScrolled(window.scrollY > 10);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
   const handleThemeChange = () => {
-    setMode(prev => prev === 'light' ? 'dark' : 'light');
+    setMode(prev => (prev === 'light' ? 'dark' : 'light'));
   };
 
   const scrollTo = (id) => {
@@ -27,29 +29,33 @@ const Header = ({ mode, setMode }) => {
     <header className={`header ${scrolled ? 'scrolled' : ''} ${mode}`}>
       <div className="header-container">
         <div className="logo" onClick={() => scrollTo('home')}>
-          <span className="logo-text">ABHISHEK JANA</span>
+          <span className="logo-text">Sapnadip Baidya</span>
           <span className="logo-dot"></span>
         </div>
-
         <div className={`nav-links ${mobileMenuOpen ? 'open' : ''}`}>
-          {['about', 'skills', 'projects', 'education', 'contact'].map((item) => (
+          {NAV_ITEMS.map((item) => (
             <div
               key={item}
               className="nav-item"
-              onClick={() => scrollTo(item)}
+              onClick={() => {
+                if (item === 'contact') {
+                  setContactDialogOpen(true);
+                } else {
+                  scrollTo(item);
+                }
+                setMobileMenuOpen(false);
+              }}
             >
               <span>{item}</span>
               <div className="nav-item-underline"></div>
             </div>
           ))}
-
           <button className="theme-toggle" onClick={handleThemeChange}>
             {mode === 'dark' ? <LightMode /> : <DarkMode />}
           </button>
         </div>
-
-        <button 
-          className={`hamburger ${mobileMenuOpen ? 'open' : ''}`} 
+        <button
+          className={`hamburger ${mobileMenuOpen ? 'open' : ''}`}
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
         >
           <span></span>
@@ -57,6 +63,12 @@ const Header = ({ mode, setMode }) => {
           <span></span>
         </button>
       </div>
+      {/* Contact Portal Dialog */}
+      <PortalDialog
+        open={contactDialogOpen}
+        onClose={() => setContactDialogOpen(false)}
+        url="http://portfolioui.s3-website.eu-north-1.amazonaws.com/contact"
+      />
 
       <style jsx>{`
         .header {
@@ -71,21 +83,17 @@ const Header = ({ mode, setMode }) => {
           background: rgba(255, 255, 255, 0.8);
           box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
-
         .header.dark {
           background: rgba(10, 10, 10, 0.8);
           box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
         }
-
         .header.scrolled {
           padding: 1rem 2rem;
           background: rgba(255, 255, 255, 0.95);
         }
-
         .header.scrolled.dark {
           background: rgba(10, 10, 10, 0.95);
         }
-
         .header-container {
           max-width: 1200px;
           margin: 0 auto;
@@ -93,25 +101,21 @@ const Header = ({ mode, setMode }) => {
           justify-content: space-between;
           align-items: center;
         }
-
         .logo {
           display: flex;
           align-items: center;
           cursor: pointer;
           position: relative;
         }
-
         .logo-text {
           font-size: 1.5rem;
           font-weight: 700;
           color: #333;
           transition: all 0.3s ease;
         }
-
         .dark .logo-text {
           color: #fff;
         }
-
         .logo-dot {
           width: 8px;
           height: 8px;
@@ -120,19 +124,16 @@ const Header = ({ mode, setMode }) => {
           margin-left: 8px;
           animation: pulse 2s infinite;
         }
-
         @keyframes pulse {
           0% { transform: scale(1); }
           50% { transform: scale(1.2); }
           100% { transform: scale(1); }
         }
-
         .nav-links {
           display: flex;
           align-items: center;
           gap: 2rem;
         }
-
         .nav-item {
           position: relative;
           cursor: pointer;
@@ -141,11 +142,9 @@ const Header = ({ mode, setMode }) => {
           color: #333;
           transition: all 0.3s ease;
         }
-
         .dark .nav-item {
           color: #fff;
         }
-
         .nav-item-underline {
           position: absolute;
           bottom: -5px;
@@ -155,11 +154,9 @@ const Header = ({ mode, setMode }) => {
           background: linear-gradient(135deg, #6e45e2, #88d3ce);
           transition: width 0.3s ease;
         }
-
         .nav-item:hover .nav-item-underline {
           width: 100%;
         }
-
         .theme-toggle {
           background: none;
           border: none;
@@ -172,19 +169,15 @@ const Header = ({ mode, setMode }) => {
           padding: 0.5rem;
           border-radius: 50%;
         }
-
         .dark .theme-toggle {
           color: #fff;
         }
-
         .theme-toggle:hover {
           background: rgba(0, 0, 0, 0.1);
         }
-
         .dark .theme-toggle:hover {
           background: rgba(255, 255, 255, 0.1);
         }
-
         .hamburger {
           display: none;
           flex-direction: column;
@@ -197,7 +190,6 @@ const Header = ({ mode, setMode }) => {
           padding: 0;
           z-index: 1001;
         }
-
         .hamburger span {
           display: block;
           width: 100%;
@@ -205,23 +197,18 @@ const Header = ({ mode, setMode }) => {
           background: #333;
           transition: all 0.3s ease;
         }
-
         .dark .hamburger span {
           background: #fff;
         }
-
         .hamburger.open span:nth-child(1) {
           transform: rotate(45deg) translate(5px, 5px);
         }
-
         .hamburger.open span:nth-child(2) {
           opacity: 0;
         }
-
         .hamburger.open span:nth-child(3) {
           transform: rotate(-45deg) translate(5px, -5px);
         }
-
         @media (max-width: 768px) {
           .nav-links {
             position: fixed;
@@ -236,23 +223,18 @@ const Header = ({ mode, setMode }) => {
             transition: right 0.3s ease;
             z-index: 1000;
           }
-
           .dark .nav-links {
             background: rgba(10, 10, 10, 0.98);
           }
-
           .nav-links.open {
             right: 0;
           }
-
           .hamburger {
             display: flex;
           }
-
           .header {
             padding: 1rem 1.5rem;
           }
-
           .header.scrolled {
             padding: 0.8rem 1.5rem;
           }

@@ -179,7 +179,7 @@ const Contact = () => {
                   </GlowButton>
                   <GlowButton 
                     startIcon={<FileDownload />}
-                    onClick={() => window.open('/Abhishek Jana Frontend Developer.pdf', '_blank')}
+                    onClick={() => window.open('/Sapnadip Baidya Frontend Developer.pdf', '_blank')}
                     sx={{
                       '&:before': {
                         background: `linear-gradient(45deg, ${theme.palette.secondary?.main || '#6e48aa'}, ${theme.palette.success.main || '#4caf50'})`,
@@ -222,11 +222,11 @@ const Contact = () => {
                   <Box>
                     <Typography variant="subtitle2" color="text.secondary">Email</Typography>
                     <Link
-  href="mailto:abhishekjana.2507@gmail.com"
+  href="mailto:sapnadip.baidya.official@gmail.com"
   underline="hover"
   sx={{ fontWeight: 500, color: 'inherit', '&:hover': { color: 'primary.main' } }}
 >
-  Abhishek Jana
+  Sapnadip Baidya
 </Link>
                   </Box>
                 </Box>
@@ -248,7 +248,7 @@ const Contact = () => {
                   <Box>
                     <Typography variant="subtitle2" color="text.secondary">Phone</Typography>
                     <Typography variant="body1" fontWeight={500}>
-                      +91 8478909683
+                      +91 8013687055
                     </Typography>
                   </Box>
                 </Box>
@@ -270,7 +270,7 @@ const Contact = () => {
                   <Box>
                     <Typography variant="subtitle2" color="text.secondary">Location</Typography>
                     <Typography variant="body1" fontWeight={500}>
-                      Kolkata, India
+                      Pune, India
                     </Typography>
                   </Box>
                 </Box>
@@ -292,7 +292,7 @@ const Contact = () => {
                   <Box>
                     <Typography variant="subtitle2" color="text.secondary">LinkedIn</Typography>
                     <Link 
-                      href="www.linkedin.com/in/abhishek-jana-49513822a" 
+                      href="https://www.linkedin.com/in/sapnadipbaidya/" 
                       target="_blank"
                       underline="hover"
                       sx={{ 
@@ -303,7 +303,7 @@ const Contact = () => {
                         }
                       }}
                     >
-                      Abhishek Jana
+                      Sapnadip Baidya
                     </Link>
                   </Box>
                 </Box>

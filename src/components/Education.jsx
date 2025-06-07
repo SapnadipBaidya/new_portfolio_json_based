@@ -13,38 +13,29 @@ import {
 
 const education = [
   {
-    degree: 'Bachelor of Technology | Computer Science',
+    degree: 'Bachelor of Technology | Electronics And Communication',
     institution: 'Lovely Professional University',
     specialization: 'Specialization in Data Science',
-    duration: '2022 - 2025',
+    duration: '2019 - 2023',
     icon: <DataObject fontSize="small" />,
     skills: ['Machine Learning', 'Big Data', 'Cloud Computing', 'AI'],
-    highlights: []
-  },
-  {
-    degree: 'Diploma | Computer Science',
-    institution: 'Lovely Professional University',
-    specialization: '',
-    duration: '2019 - 2022',
-    icon: <Code fontSize="small" />,
-    skills: ['Algorithms', 'Web Development', 'Database Systems'],
     highlights: []
   }
 ];
 
 const certifications = [
   {
-    name: 'Blockchain Developer Certification',
-    issuer: 'Coursera',
+    name: '1 year internship [Highako]',
+    issuer: 'Highradius',
     date: '2023',
-    credential: 'Credential ID: XYZ123',
-    skills: ['Solidity', 'Smart Contracts', 'Ethereum'],
+    credential: 'https://drive.google.com/file/d/1pNxeFhNp4FSbZCtTBKcjg_WJ1F6iqIQa/view',
+    skills: ['React', 'Java', 'SQL'],
     icon: '/assets/blockchain-icon.svg'
   },
   {
-    name: 'Advanced React Specialist',
-    issuer: 'Udemy',
-    date: '2022',
+    name: 'Ai face detection web app',
+    issuer: 'Guvi',
+    date: '2021',
     credential: 'Credential ID: ABC456',
     skills: ['Hooks', 'Context API', 'Performance Optimization'],
     icon: '/assets/react-icon.svg'
@@ -53,15 +44,15 @@ const certifications = [
 
 const achievements = [
   {
-    title: 'Hackathon Champion',
-    description: 'Secured 9th rank among 500+ participants in Ineuron Hackathon',
+    title: 'Highako of the quarter Q4 2022-2023',
+    description: 'Secured 1st rank among 1000+ interns in the organization',
     date: '2022',
     icon: <EmojiEvents />
   },
   {
-    title: 'Code Educator in BrightChamps',
-    description: 'Tought coding to 100+ International students in BrightChamps',
-    date: '2022-2023',
+    title: 'Online Training on Internet of Things and Machine Learning',
+    description: 'Made a learning session for BOLT IOT',
+    date: '2021',
     icon: <WorkspacePremium />
   }
 ];

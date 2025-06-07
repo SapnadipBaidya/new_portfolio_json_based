@@ -47,15 +47,15 @@ const projects = [
   },
   {
     id: 3,
-    title: 'Addlens Website',
+    title: 'Data Pipeline Generator',
     date: 'Jan 2024',
     description: 'Developed a responsive company website using HTML, CSS, JavaScript, and PHP. Designed interactive UI/UX for showcasing company information and services with a PHP backend contact form.',
     longDescription: 'A responsive marketing website for Addlens, featuring modern design principles and smooth animations. The frontend was built with vanilla JavaScript, CSS3 animations, and responsive layouts. The PHP backend handles form submissions and includes basic security measures against spam. The site features a CMS-like admin panel for content updates without code changes. Performance optimizations resulted in 95+ Lighthouse scores across all metrics.',
     technologies: ['HTML', 'CSS', 'JavaScript', 'PHP'],
     category: 'web',
     links: {
-      demo: '#',
-      github: '#'
+demo: 'https://github.com/SapnadipBaidya/datapipelineui',
+      github: 'https://github.com/SapnadipBaidya/datapipelineui'
     },
     icon: <Code />,
     accentColor: '#FFD166',
@@ -714,7 +714,7 @@ const Projects = () => {
             variants={itemVariants}
             style={{ textAlign: 'center', marginTop: '40px' }}
           >
-            <Button 
+            {/* <Button 
               variant="contained"
               size="large"
               sx={{
@@ -731,7 +731,7 @@ const Projects = () => {
               }}
             >
               View All Projects
-            </Button>
+            </Button> */}
           </motion.div>
         </motion.div>
       </Container>

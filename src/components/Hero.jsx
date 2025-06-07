@@ -10,7 +10,7 @@ const Hero = () => {
   
   const codeLines = [
     "const developer = {",
-    "  name: 'Abhishek Jana',",
+    "  name: 'Sapnadip Baidya',",
     "  role: 'Full Stack Developer',",
     "  skills: ['React', 'Node.js', 'MongoDB'],",
     "  passion: 'Building digital experiences'",
@@ -144,7 +144,7 @@ const Hero = () => {
             lineHeight: 1.2,
           }}
         >
-          Hi, I'm <span style={{ color: theme.palette.primary.main }}>Abhishek Jana</span>
+          Hi, I'm <span style={{ color: theme.palette.primary.main }}>Sapnadip Baidya</span>
         </Typography>
         
         <Typography 

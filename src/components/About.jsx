@@ -139,7 +139,7 @@ const About = () => {
               </Typography>
               
               <Typography variant="body1" sx={{ mb: 3 }}>
-                I'm Abhishek Jana, a passionate Full Stack Developer based in Kolkata, India. 
+                I'm Sapnadip Baidya, a passionate Full Stack Developer based in Pune, India. 
                 I specialize in building modern web applications using technologies like React, Node.js, and Next.js.
               </Typography>
               
@@ -162,9 +162,9 @@ const About = () => {
                 }}
               >
                 {[
-                  { label: "Phone", value: "+91 8478909683" },
-                  { label: "Email", value: "abhishekjana.2507@gmail.com" },
-                  { label: "Location", value: "Kolkata, India" },
+                  { label: "Phone", value: "+91 8013687055" },
+                  { label: "Email", value: "sapnadip.baidya.official@gmail.com" },
+                  { label: "Location", value: "Pune, India" },
                   { label: "Languages", value: "English, Hindi, Bengali" }
                 ].map((item, index) => (
                   <Box

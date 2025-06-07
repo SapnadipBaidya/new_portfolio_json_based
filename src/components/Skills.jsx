@@ -65,7 +65,7 @@ const skillsData = [
   },
   { 
     name: 'React.js', 
-    level: 85, 
+    level: 94, 
     category: 'framework', 
     favorite: true, 
     icon: 'R', 
@@ -157,17 +157,6 @@ const skillsData = [
     certifications: []
   },
   {
-    name: 'Tableau',
-    level: 85,
-    category: 'data-visualization',
-    icon: 'T',
-    since: 2022,
-    projects: 5,
-    lastUsed: '2025',
-    expertise: ['Dashboard Design', 'Data Blending', 'Calculated Fields', 'Interactive Filters'],
-    certifications: []
-  },
-  {
     name: 'Excel',
     level: 80,
     category: 'data-analysis',
@@ -178,15 +167,15 @@ const skillsData = [
     expertise: ['Pivot Tables', 'VLOOKUP & XLOOKUP', 'Conditional Formatting', 'Macros'],
     certifications: []
   },
-  {
-    name: 'Scala',
-    level: 70,
-    category: 'language',
-    icon: 'S',
-    since: 2023,
-    projects: 2,
+    {
+    name: 'Redis',
+    level: 95,
+    category: 'data-analysis',
+    icon: 'E',
+    since: 2021,
+    projects: 6,
     lastUsed: '2025',
-    expertise: ['Functional Programming', 'Akka Basics', 'Pattern Matching', 'JVM Integration'],
+    expertise: ['Pivot Tables', 'VLOOKUP & XLOOKUP', 'Conditional Formatting', 'Macros'],
     certifications: []
   },
   {

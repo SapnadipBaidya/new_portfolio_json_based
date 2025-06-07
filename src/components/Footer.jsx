@@ -28,11 +28,11 @@ const Footer = () => {
       </Box>
       
       <Typography variant="body2" color="text.secondary">
-        © {new Date().getFullYear()} Abhishek Jana. All rights reserved.
+        © {new Date().getFullYear()} Sapnadip Baidya. All rights reserved.
       </Typography>
       
       <Typography variant="body2" color="text.secondary" sx={{ mt: 1 }}>
-        Designed and built with ❤️ by Abhishek Jana
+        Designed and built with ❤️ by Sapnadip Baidya
       </Typography>
     </Box>
   );
